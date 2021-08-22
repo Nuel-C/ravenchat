@@ -183,6 +183,11 @@ export const Chat = (props) => {
 
                     <div className='col-sm-8' id='texting-area'>
 
+                        <div id='mobile-controls' style={{flexDirection:'row', justifyContent:'space-between', borderBottom:'1px solid white'}}>
+                            <Link to='/reports'><button className='btn btn-danger'  style={{marginBottom:'5%',color:'white'}}>Blacklist</button></Link>
+                            <button onClick={log_out} className='btn btn-danger'  style={{marginBottom:'5%',color:'white'}}><img src={logOut} style={{height:'1rem', width:'1rem'}} alt=''/></button>
+                        </div>
+
                         <div id='message-display'>
                             {
                                 messages.map(msg => {
