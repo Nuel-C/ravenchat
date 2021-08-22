@@ -98,6 +98,9 @@ ul {
     #mobile-controls{
       display: flex;
     }
+    #message-display{
+      height: 80vh;
+    }
   }
   
   @media screen and (min-width: 768px){
