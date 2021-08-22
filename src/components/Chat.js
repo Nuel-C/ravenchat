@@ -7,6 +7,7 @@ import { logout } from '../actions/index'
 import { updateName } from '../actions/index'
 import {Message} from './Message'
 import img from '../img/user.png'
+import logOut from '../img/power.svg'
 import { Redirect, Link } from 'react-router-dom'
 import { showForm } from '../actions'
 
@@ -161,18 +162,21 @@ export const Chat = (props) => {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-sm-4' id='rooms'>
-                    <Link to='/reports'><button className='btn btn-danger' style={{color:'white'}}>Blacklist</button></Link>
+                        <div style={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+                            <Link to='/reports'><button className='btn btn-danger' style={{color:'white'}}>Blacklist</button></Link>
+                            <button onClick={log_out} className='btn btn-danger' style={{color:'white'}}><img src={logOut} style={{height:'1rem', width:'1rem'}} alt=''/></button>
+                        </div>
                         <h2 style={{marginTop:'10%'}}><strong>Online Users</strong></h2>
                         <hr style={{border:'1px solid black'}}/>
                         <ul className='users'>
                             <div id='users'>
-                                <h4><li><img src={img} alt=''/>Musa</li></h4><br/>
-                                <h4><li><img src={img} alt=''/>Mike</li></h4><br/>
-                                <h4><li><img src={img} alt=''/>Peter</li></h4><br/>
-                                <h4><li><img src={img} alt=''/>Sophia</li></h4><br/>
-                                <h4><li><img src={img} alt=''/>Mufasa</li></h4><br/>
-                                <h4><li><img src={img} alt=''/>Scar</li></h4><br/>
-                                <h4><li><img src={img} alt=''/>Nala</li></h4><br/>
+                                <h4><li><img id='userss' src={img} alt=''/>Musa</li></h4><br/>
+                                <h4><li><img id='userss' src={img} alt=''/>Mike</li></h4><br/>
+                                <h4><li><img id='userss' src={img} alt=''/>Peter</li></h4><br/>
+                                <h4><li><img id='userss' src={img} alt=''/>Sophia</li></h4><br/>
+                                <h4><li><img id='userss' src={img} alt=''/>Mufasa</li></h4><br/>
+                                <h4><li><img id='userss' src={img} alt=''/>Scar</li></h4><br/>
+                                <h4><li><img id='userss' src={img} alt=''/>Nala</li></h4><br/>
                             </div>
                         </ul><br/>
                     </div>
