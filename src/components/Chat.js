@@ -32,7 +32,8 @@ export const Chat = (props) => {
         dispatch(logout())
         dispatch(updateName({
             username: ' ',
-            blockedUsers:[]
+            blockedUsers:[],
+            messages:[]
         }))
     }
 
@@ -192,7 +193,7 @@ export const Chat = (props) => {
                             {
                                 messages.map(msg => {
                                     return(
-                                        <Message key={(user.messages.indexOf(msg)*Math.random())} user={user.username} message={msg.message} username={msg.username} time={msg.time}/>
+                                        <Message key={(messages.indexOf(msg)*Math.random())} user={user.username} message={msg.message} username={msg.username} time={msg.time}/>
                                     )
                                 }).reverse()
                             }
