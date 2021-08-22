@@ -1,0 +1,30 @@
+#message-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+#user-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    /*for mobile phones*/
+    
+}
+  
+@media screen and (min-width: 768px){
+    /*for large screens*/
+     
+}

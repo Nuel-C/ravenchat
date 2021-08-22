@@ -1,0 +1,16 @@
+1.	Create a messaging system where users can chat with each other
+2.	Users can block each other and report a user.
+3.	Having end to end encryption
+Reference
+1.	Facebook messenger
+2.	Whatsapp
+3.	Signal
+Responsibilities
+•	Pays keen attention to detail 
+•	Pays keen attention to design consistency
+•	Produce high quality code using software design/architecture best practices
+•	Produce an optimize messaging system to make communication feel smooth and performant
+Deadline Sunday 12 noon
+ravenlivestream.com
+
+color: black and #5458f7
