@@ -13,6 +13,8 @@ import { showForm } from '../actions'
 
 
 const socket = io.connect('https://raven-chat.herokuapp.com/')
+// const socket = io.connect('http://localhost:5000/')
+
 
 export const Chat = (props) => {
 
@@ -122,10 +124,7 @@ export const Chat = (props) => {
             login === false ? <Redirect to = '/'/> : null
             }
             <div id='report-section' style={{
-                        position:'absolute',
-                        alignItems:'center',
                         display: showFormm.value ? 'block' : 'none',
-                        backdropFilter: 'blur(10px)'
                     }}>
                         <div style={{display:'flex',flexDirection:'row-reverse'}}><button onClick={() => dispatch(showForm({value:!showFormm.value, reportUsername:''}))} style={{background:'transparent', color:'white', padding:'2%', paddingRight:'4%', paddingLeft:'4%'}}>x</button ></div><br/>
                             <span style={{color:'green'}}>{success}</span>

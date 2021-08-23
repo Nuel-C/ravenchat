@@ -20,6 +20,12 @@ ul {
     padding: 5%;
   }
 
+  #report-section{
+      position:absolute;
+      align-items:center;
+      backdrop-filter: blur(10px);
+  }
+
 #rooms {
     background-color:#898bfb;
     color: rgb(0, 0, 0);
